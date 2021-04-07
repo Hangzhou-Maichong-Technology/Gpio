@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gpio">
+        <item>RK 平台</item>
+        <item>A33 平台</item>
+        <item>MSM8909 平台</item>
+    </string-array>
+</resources>

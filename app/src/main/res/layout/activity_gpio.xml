@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color_primary">
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/top_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/qmui_config_color_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/iv_gpio_tip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView
+            android:id="@+id/groupListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_gpio_tip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/qmui_config_color_white"
+        android:src="@drawable/ic_gpio_cal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+</android.support.constraint.ConstraintLayout>
